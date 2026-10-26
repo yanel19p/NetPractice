@@ -1,4 +1,5 @@
-This project has been created as part of the 42 curriculum by yaperalt.
+
+*This project has been created as part of the 42 curriculum by yaperalt.*
 
 # NetPractice
 
@@ -6,21 +7,21 @@ This project has been created as part of the 42 curriculum by yaperalt.
 
 NetPractice is a networking project from the 42 Common Core designed to introduce the fundamentals of computer networking through practical exercises.
 
-The goal of this project is to understand how devices communicate with each other over a network and how to configure network settings correctly. Through a series of ten levels, the student must solve networking problems by modifying IP addresses, subnet masks, default gateways, and routing configurations.
+The goal of this project is to understand how devices communicate with each other over a network and how to configure network settings correctly. Through a series of ten levels, students solve networking problems by modifying IP addresses, subnet masks, default gateways, and routing configurations.
 
 Each level presents a network diagram containing computers, routers, and other network devices. The objective is to identify configuration errors and adjust the parameters until all required devices can communicate successfully.
 
 The project covers the following concepts:
 
-TCP/IP addressing and IPv4 addresses.
-Network addresses, host addresses, and broadcast addresses.
-Subnet masks and CIDR notation.
-Default gateways and routing tables.
-Routers and switches and their respective roles.
-Network interfaces and connected networks.
-The OSI model and the different layers of network communication.
-Communication between devices on the same network and across different networks.
-Basic routing principles and network troubleshooting.
+- TCP/IP addressing and IPv4 addresses.
+- Network addresses, host addresses, and broadcast addresses.
+- Subnet masks and CIDR notation.
+- Default gateways and routing tables.
+- Routers and switches and their respective roles.
+- Network interfaces and connected networks.
+- The OSI model and the different layers of network communication.
+- Communication between devices on the same network and across different networks.
+- Basic routing principles and network troubleshooting.
 
 By completing NetPractice, students develop a better understanding of how IP networks are structured, how packets are forwarded, and how to diagnose common network configuration problems.
 
@@ -32,35 +33,36 @@ NetPractice is a browser-based training project provided by the 42 platform. It 
 
 Clone your repository and navigate to its root directory:
 
-bash
+```bash
 git clone <your-repository-url>
 cd <your-repository-name>
+```
 
 ### 2. Running the Training Interface
 
 Open the NetPractice training interface provided by the 42 Intranet or the project resources available at your campus.
 
-If a run.sh script is provided with your project files, make it executable and run it:
+If a `run.sh` script is provided with your project files, make it executable and run it:
 
-bash
+```bash
 chmod +x run.sh
 ./run.sh
-
+```
 
 Follow the instructions displayed by the script. Depending on the provided version, it may launch a local web server or open the training interface in your browser.
 
-If your version of NetPractice is accessed directly through the 42 platform, open the provided training page instead. The training interface is used to configure and validate each level.
+If your version of NetPractice is accessed directly through the 42 platform, open the provided training page instead.
 
 ### 3. Completing the Levels
 
 The project consists of 10 networking levels. For each level:
 
-Examine the network diagram and identify the devices involved.
-Inspect the current IP addresses, subnet masks, gateways, and routing configurations.
-Determine why the network communication is not working as expected.
-Modify the necessary configuration fields.
-Validate the configuration using the training interface.
-Export the configuration once the level has been successfully completed.
+1. Examine the network diagram and identify the devices involved.
+2. Inspect the current IP addresses, subnet masks, gateways, and routing configurations.
+3. Determine why the network communication is not working as expected.
+4. Modify the necessary configuration fields.
+5. Validate the configuration using the training interface.
+6. Export the configuration once the level has been successfully completed.
 
 Repeat these steps until all ten levels are completed.
 
@@ -70,9 +72,9 @@ After successfully completing each level, use the export or download feature pro
 
 Export one configuration file per level and place all ten exported files directly in the root directory of your Git repository.
 
-The repository structure should follow this example:
+Example repository structure:
 
-text
+```text
 NetPractice/
 ├── README.md
 ├── level1.json
@@ -85,82 +87,87 @@ NetPractice/
 ├── level8.json
 ├── level9.json
 └── level10.json
+```
 
-
-The filenames above are examples. Keep the actual filenames and file format generated by the official training interface, and ensure that all ten files are located at the repository root.
+The filenames above are examples. Keep the actual filenames and file format generated by the official training interface.
 
 ### 5. Submission Requirements
 
 Before submitting the project, make sure that:
 
-All 10 levels have been completed successfully.
-Each level has been exported using the training interface.
-There are exactly 10 exported configuration files, with one file per level.
-All exported configuration files are placed at the root of the Git repository.
-The README.md file is present at the repository root and is written in English.
-No required configuration files are missing from the final submission.
+- All 10 levels have been completed successfully.
+- Each level has been exported using the training interface.
+- Exactly 10 exported configuration files are present, with one file per level.
+- All exported configuration files are placed at the root of the Git repository.
+- The `README.md` file is present at the repository root and is written in English.
+- No required configuration files are missing from the final submission.
 
 Check the repository contents before pushing:
 
-bash
+```bash
 ls -la
 git status
-
+```
 
 Then commit and push your work:
 
-bash
-git add README.md level*.json
+```bash
+git add README.md
+git add <your-exported-configuration-files>
 git commit -m "Complete NetPractice project"
 git push
+```
 
-
-Adjust the file pattern in the git add command if your exported files use different names or extensions.
+Replace the placeholders with your actual repository URL, directory name, and exported configuration filenames.
 
 ## Resources
 
-Networking Concepts Studied:
+### Networking Concepts Studied
 
 The NetPractice project introduces and reinforces the following networking concepts:
 
-TCP/IP addressing: Understanding IPv4 addresses and how they identify devices on a network.
-Subnet masks and CIDR: Determining which portion of an IP address represents the network and which portion represents the host.
-Network and broadcast addresses: Identifying the boundaries of an IPv4 subnet and determining valid host addresses.
-Default gateways: Understanding how a device sends traffic to destinations outside its local network.
-Routers: Learning how routers connect different networks and forward packets between them.
-Switches: Understanding how devices communicate within a local area network.
-OSI model: Understanding the seven layers of network communication and the role of the network and transport layers.
-Routing tables: Learning how routes determine the next hop for network traffic.
-Network interfaces: Configuring IP addresses and subnet masks on individual interfaces.
-Network troubleshooting: Identifying incorrect addressing, incompatible subnets, invalid gateways, and routing problems.
-Documentation and Tutorials
+- **TCP/IP addressing:** Understanding IPv4 addresses and how they identify devices on a network.
+- **Subnet masks and CIDR:** Determining which portion of an IP address represents the network and which portion represents the host.
+- **Network and broadcast addresses:** Identifying the boundaries of an IPv4 subnet and determining valid host addresses.
+- **Default gateways:** Understanding how a device sends traffic to destinations outside its local network.
+- **Routers:** Learning how routers connect different networks and forward packets between them.
+- **Switches:** Understanding how devices communicate within a local area network.
+- **OSI model:** Understanding the seven layers of network communication and the role of the network and transport layers.
+- **Routing tables:** Learning how routes determine the next hop for network traffic.
+- **Network interfaces:** Configuring IP addresses and subnet masks on individual interfaces.
+- **Network troubleshooting:** Identifying incorrect addressing, incompatible subnets, invalid gateways, and routing problems.
 
-### Documentation and Official References
-RFC 791 — Internet Protocol (IPv4) — The original specification describing IPv4 packet addressing and delivery.
-RFC 1918 — Address Allocation for Private Internets — Explains private IPv4 address ranges used in local networks.
-RFC 4632 — Classless Inter-domain Routing (CIDR) — Describes CIDR notation, network prefixes, and route aggregation.
-RFC 826 — Address Resolution Protocol (ARP) — Explains how IP addresses are mapped to hardware addresses on local networks.
-Cisco — Configuring IPv4 Addresses — Technical documentation on IPv4 addressing and network prefixes.
+### Official Documentation and Technical References
+
+- [RFC 791 — Internet Protocol (IPv4)](https://www.rfc-editor.org/rfc/rfc791) — The IPv4 protocol specification, including packet addressing and delivery.
+- [RFC 1918 — Address Allocation for Private Internets](https://www.rfc-editor.org/rfc/rfc1918) — Documentation on private IPv4 address ranges used in local networks.
+- [RFC 4632 — Classless Inter-domain Routing (CIDR)](https://www.rfc-editor.org/rfc/rfc4632) — Explains CIDR notation, network prefixes, and route aggregation.
+- [RFC 826 — Address Resolution Protocol (ARP)](https://www.rfc-editor.org/rfc/rfc826) — Explains how IP addresses are mapped to hardware addresses on local networks.
+- [Cisco — Configuring IPv4 Addresses](https://www.cisco.com/c/en/us/td/docs/routers/ios-xe/ip-addressing/ip-addressing/m_config-ipv4-addr-0.html) — Technical documentation on IPv4 addressing and network prefixes.
 
 ### Tutorials and Learning Resources
-DigitalOcean — IP Addresses, Subnets, and CIDR Notation Explained — A practical introduction to IP addressing, subnet masks, and subnet calculations.
-Cloudflare — What Is the OSI Model? — Explains the seven OSI layers and their roles in network communication.
-Cloudflare — What Is a Computer Network Protocol? — Introduces network protocols and how devices exchange information.
-Netref — Networking Quick Reference — A practical reference for IPv4 subnetting, CIDR, subnet masks, routing, switching, and the OSI model.
-Amazon Web Services — IP Addressing for VPCs and Subnets — Provides additional explanations and examples of IP addressing and subnet ranges.
 
+- [DigitalOcean — Understanding IP Addresses, Subnets, and CIDR Notation](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) — A practical introduction to IP addressing, subnet masks, and subnet calculations.
+- [Cloudflare — What Is the OSI Model?](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/) — Explains the seven OSI layers and their roles in network communication.
+- [Cloudflare — What Is a Network Protocol?](https://www.cloudflare.com/learning/network-layer/what-is-a-protocol/) — Introduces network protocols and how devices exchange information.
+- [Cloudflare — What Is an IP Address?](https://www.cloudflare.com/learning/network-layer/internet-protocol/) — An overview of IP addressing and packet delivery.
+- [Amazon Web Services — IP Addressing for VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html) — Additional explanations and examples of IP addressing and subnet ranges.
+
+### Use of Artificial Intelligence
 
 Artificial intelligence tools, including ChatGPT, were used as supplementary assistance during the preparation of this project.
 
 AI assistance was used for the following tasks:
 
-Documentation: Drafting and organizing this README file according to the 42 NetPractice submission requirements.
-Conceptual explanations: Helping clarify networking concepts such as IP addressing, subnet masks, default gateways, routing, and the OSI model.
-Learning support: Providing explanations and guidance to help understand network configurations and troubleshoot connectivity issues.
+- **Documentation:** Drafting and organizing this README file according to the 42 NetPractice submission requirements.
+- **Conceptual explanations:** Reviewing networking concepts such as TCP/IP addressing, subnet masks, default gateways, routers, switches, and the OSI model.
+- **Learning support:** Helping explain networking problems and suggesting approaches to troubleshooting configuration errors.
 
-AI was used as a learning and documentation aid. The network configurations submitted for the project must be completed, tested, and understood by the student. Any AI-generated explanations or suggested configurations should be verified against the official training interface and the networking references listed above.
+AI was used as a documentation and learning aid. The network configurations submitted for the project must be completed, tested, and understood by the student. Any AI-generated explanations or suggested configurations should be verified using the NetPractice training interface and the technical references listed above.
 
-# Author
-42 Login: yaperalt
-Project: NetPractice
-Curriculum: 42 Common Core
+## Author
+
+- **42 Login:** `yaperalt`
+- **Project:** NetPractice
+- **Curriculum:** 42 Common Core
+
