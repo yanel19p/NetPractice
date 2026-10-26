@@ -34,8 +34,8 @@ NetPractice is a browser-based training project provided by the 42 platform. It 
 Clone your repository and navigate to its root directory:
 
 ```bash
-git clone <your-repository-url>
-cd <your-repository-name>
+git clone https://github.com/yanel19p/NetPractice
+cd NetPractice
 ```
 
 ### 2. Running the Training Interface
